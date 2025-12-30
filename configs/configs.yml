@@ -1,0 +1,9 @@
+data:
+  train_data: ${TRAIN_DATA_PATH}
+  test_data: ${TEST_DATA_PATH}
+
+model:
+  model_path: ${MODEL_PATH}
+  vectorizer_path: ${VECTORIZER_PATH}
+  model_version: ${MODEL_VERSION}
+
