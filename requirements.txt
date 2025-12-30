@@ -1,0 +1,16 @@
+torch
+numpy
+pandas
+scikit-learn
+nltk
+tqdm
+
+fastapi
+uvicorn[standard]
+
+psycopg2-binary
+SQLAlchemy
+alembic
+
+python-dotenv
+gunicorn
