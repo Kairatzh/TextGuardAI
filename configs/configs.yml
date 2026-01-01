@@ -7,3 +7,22 @@ model:
   vectorizer_path: ${VECTORIZER_PATH}
   model_version: ${MODEL_VERSION}
 
+database:
+  user: ${POSTGRES_USER}
+  password: ${POSTGRES_PASSWORD}
+  host: ${POSTGRES_HOST}
+  port: ${POSTGRES_PORT}
+  db: ${POSTGRES_DB}
+
+app:
+  env: ${APP_ENV}
+  host: ${APP_HOST}
+  port: ${APP_PORT}
+
+redis:
+  host: ${REDIS_HOST:-localhost}
+  port: ${REDIS_PORT:-6379}
+
+logging:
+  level: ${LOG_LEVEL:-INFO}
+
