@@ -1,5 +1,6 @@
 import pandas as pd 
 from configs.config import load_configs
+import pickle
 
 configs = load_configs()
 
@@ -143,3 +144,7 @@ print(train_losses)
 print(train_accuracies)
 print(test_losses)
 print(test_accuracies)
+
+torch.save(model.state_dict(), configs["model"]["model_path"])
+pickle.dump(vectorizer, open(configs["model"]["vectorizer_path"], "wb"))
+print("Model and vectorizer saved successfully")
